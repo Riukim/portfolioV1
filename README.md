@@ -20,7 +20,7 @@ For now, the projects section consists of placeholders. As I continue to expand 
 
 ## 📁 File Structure
 
-1. **index.html**: The main HTML file serves as the landing page for the portfolio. It contains sections such as About Me, Skills, Projects, and Experience. Each section is structured to provide concise information and easy navigation.
+1. **index.html**: The main HTML file serves as the landing page for the portfolio. It contains sections such as About, Projects, Experience and Contacts. Each section is structured to provide concise information and easy navigation.
 
 2. **style.css**: The CSS file is responsible for styling the entire web page. It includes styling rules for layout, colors, fonts, and responsiveness. Specific classes and IDs are used to target elements and ensure a consistent design across different sections.
 
@@ -40,11 +40,7 @@ The design follows a minimalistic and clean aesthetic, emphasizing clarity and s
 
 ### Sectional Organization
 
-Each section of the portfolio is organized to serve a specific purpose, providing an organized and logical flow of information. For example, the "Skills" section follows the "About Me" section to give visitors an immediate understanding of my background before delving into technical details.
-
-### Image Optimization
-
-Images are optimized for web loading speed without compromising quality. Proper image compression techniques are applied to maintain a balance between visual appeal and efficient loading times.
+Each section of the portfolio is organized to serve a specific purpose, providing an organized and logical flow of information. For example, the "Experience" section follows the "About" section to give visitors an immediate understanding of my background before delving into technical details.
 
 ### Readability and Accessibility
 
