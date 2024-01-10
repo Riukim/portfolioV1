@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 75rem;
+    background-color: #333;
+    color: hsl(37, 100%, 92%);
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    margin: 0 30px 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/*NAVBAR*/
+
+.nav > li {
+    font-size: 15px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    z-index: 999;
+}
+
+.navbar-collapse.open {
+    border-top: 1px solid papayawhip;
+}
+
+#navbar-modified.navbar-scrolled {
+    padding: 0;
+}
+
+#navbar-modified {
+    padding: 15px 0;
+    margin-bottom: 0;
+    border-color: transparent;
+    background-color: #000;
+    font-family: 'Karla', sans-serif;
+    transition: background-color .5s ease-in-out, padding .5s ease-in-out;
+    text-transform: uppercase;
+}
+
+#navbar-modified .navbar-expanded .navbar-collapse {
+    border-top: 1px solid papayawhip;
+}
+
+#navbar-modified .navbar-brand{
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+}
+
+#navbar-modified .navbar-brand:focus {
+    outline: 0;
+}
+
+#navbar-modified .navbar-brand:hover {
+    opacity: 0.8;
+}
+
+#navbar-modified .navbar-toggler {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: papayawhip;
+    transition: color 0.3s ease-in-out;
+}
+
+#navbar-modified .navbar-toggler {
+    color: papayawhip;
+    overflow: hidden;
+}
+
+#navbar-modified .navbar-toggler:hover {
+    color: orange;
+    background: transparent;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+#navbar-modified .navbar-toggler:focus,
+#navbar-modified .navbar-toggler:active {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+#navbar-modified a img {
+    width: 35px;
+    display: inline;
+    margin-top: -5px;
+    margin-right: 15px;
+}
+
+#navbar-modified a {
+    color: papayawhip;
+    font-weight: 400;
+}
+
+#navbar-modified a:hover {
+    color: orange;
+}
+
+#navbar-modified .nav li a {
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+}
+
+#navbar-modified .nav li a:hover {
+    outline: 0;
+    color: orange;
+    background-color: transparent;
+}
+
+#navbar-modified .nav li a:focus,
+#navbar-modified .nav li a:active {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+#navbar-modified .nav li.active a{
+    outline: none;
+}
+
+#navbar-modified .nav li a.active {
+    background-color: rgba(255, 255, 255, .3);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+}
+
+#navbar-modified .nav li a.active:hover {
+    color: orange
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media only screen and (min-width: 768px) {
+    .container-fluid {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 818px) {
+    .nav > li > a {
+        padding: 15px 10px;
+    } 
+}
+
+@media (min-width: 768px) {
+    .navbar-modified {
+        padding: 15px 0;
+        letter-spacing: 2px;
+        border-bottom: 0;
+        background: 0 0;
+    }
+}
+
+.navbar-brand.page-scroll {
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+
+/*INTRO*/
+
+#intro {
+    position: relative;
+    height: 100vh;
+    background: url(../images/background.jpg) center/cover fixed no-repeat;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#intro h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+#intro p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-05s {
+    animation: fadeInDown 1s ease 0.5s forwards;
+}
+
+/*ABOUT*/
+
+.about {
+    background-color: white;
+    color: #000;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about h2 {
+    text-transform: uppercase;
+}
+
+#about img#profile-picture {
+    max-width: 170px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#about p{
+    font-size: 18px;
+    max-width: 650px;
+    margin: 30px auto;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+#about #tldr {
+    width: 70%;
+    background: #f0f0f0;
+    color: #555;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+    height: 200px;
+    max-width: 650px;
+}
+
+#about #tldr h3 {
+    color: #555;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+#about #tldr h5 {
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+
+.tldr-decl {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*EXPERIENCE*/
+
+.experience {
+    background-color: #333;
+    color: papayawhip;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    padding-top: 3rem;
+}
+
+.experience a.link {
+    text-decoration: none;
+    color: orange;
+}
+
+.experience h2 {
+    text-transform: uppercase;
+}
+
+
+#experience p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 30px auto;
+    line-height: 1.7;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/*EXPERIENCE IMG*/
+
+
+.lang-section h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 50px;
+    line-height: 1.5;
+}
+
+.lang-section .lang-logo {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    height: 80px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+}
+
+.lang-section .lang-logo img{
+    margin: 0 auto;
+}
+
+.lang-section .lang-logo:hover {
+    filter: none;
+}
+
+.qualification h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 50px;
+    line-height: 1.5;
+}
+
+img.rounded.certificate {
+    width: 300px;
+    margin: 0 auto 10px;
+}
+
+/*PROJECTS*/
+
+#projects {
+    border-top: 1px solid;
+    padding-bottom: 3rem;
+    color: white;
+}
+
+.projects h2, h3 {
+    color: papayawhip;
+    text-transform: uppercase;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.card:hover .card-img-overlay {
+    opacity: 2;
+}
+
+.card:hover .card-img {
+    filter: blur(2.5px);
+  }
+
+.card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.card-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: papayawhip;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+.card-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-link a {
+    color: papayawhip;
+}
+
+.card-link a:hover {
+    color: orange;
+}
+
+/*MODAL*/
+
+
+.modal {
+    color: papayawhip;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #333;
+    border-radius: 0px;
+}
+
+.modal-header {
+    padding: 0.75rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px;
+}
+
+.modal-title {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    flex-shrink: 1;
+    width: 100%;
+    margin-right: -30.5px; 
+} 
+
+.modal-header .btn {
+    color: papayawhip;
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.modal-header .btn:hover{
+    color: orange;
+    transition: color 0.3s ease-in-out;
+}
+
+.modal-header .close {
+    padding: 0.75rem;
+    margin-top: -13px;
+}
+
+.modal-description {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    margin: 0 auto;
+}
+
+.modal-body p.visit {
+    margin-top: 50px;
+}
+
+.modal-footer {
+    border-radius: 0px;
+}
+
+.modal-footer .btn:hover {
+    color: orange;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+
+/*CONTACT*/
+
+#contact {
+    border-top: 1px solid;
+    margin-bottom: 3rem;
+}
+
+.contact p {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.contact h2 {
+    text-transform: uppercase;
+}
+
+#mail-btn {
+    font-size: 24px;
+}
+
+#mail-btn:hover {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#mail-btn i {
+    transition: color 0.3s ease-in-out;
+}
+
+#mail-btn:hover i {
+    color: orange;
+}
+
+#mail-btn span {
+    transition: color 0.3s ease-in-out;
+}
+
+#mail-btn:hover span {
+    color: orange;
+}
+
+.btn-group {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-group a {
+    font-size: 24px;
+    margin-right: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-group .btn i {
+    transition: color 0.3s ease-in-out;
+}
+
+.btn-group .btn:hover i {
+    color: orange;
+}
+
+/*SOCIAL MEDIA*/
+
+.social-media h2{
+    font-size: 18px;
+    max-width: 650px;
+    margin: 30px auto;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 50px;
+}
+
+.nav-link {
+    color: papayawhip;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: orange;
+    transition: color 0.3s ease-in-out;
+}
+
+/*PROJECT PRESENTATION*/
+
+#presentation {
+    margin-top: 100px;
+}
+
+#project-description p {
+    text-align: center;
+    font-size: 16px;
+    max-width: 650px;
+    margin: 30px auto;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.project-source a {
+    align-content: center;
+    margin-right: 8px;
+}
