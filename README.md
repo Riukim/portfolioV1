@@ -22,7 +22,7 @@ For now, the projects section consists of placeholders. As I continue to expand 
 
 1. **index.html**: The main HTML file serves as the landing page for the portfolio. It's designed to provide a comprehensive overview of my skill and experience. The page is organized into section like About, Experience, Projects and Contacts, each designed to offer concise information and to facilitate the navigation. This structure ensure that visitors can easily explore the web page and find all of the essential details in one place, enhancing their overall browsing experience.
 
-2. **style.css**: The CSS file is responsible for styling the entire web page. It includes styling rules for layout, colors, fonts, and responsiveness. Specific classes and IDs are used to target elements and ensure a consistent design across different sections.
+2. **style.css**: The CSS file is responsible for styling the entire web page. It includes styling rules for layout, colors, fonts, and responsiveness for optimal view on different devices. Specific classes and IDs are used to target elements and ensure a consistent design across different sections.
 
 3. **images/**: This directory stores all the images used in the portfolio, including logos, project screenshots, and certificates. Proper organization within this folder enhances maintainability and makes it easy to update or add new images.
 
