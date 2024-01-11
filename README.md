@@ -20,13 +20,13 @@ For now, the projects section consists of placeholders. As I continue to expand 
 
 ## 📁 File Structure
 
-1. **index.html**: The main HTML file serves as the landing page for the portfolio. It contains sections such as About, Projects, Experience and Contacts. Each section is structured to provide concise information and easy navigation.
+1. **index.html**: The main HTML file serves as the landing page for the portfolio. It's designed to provide a comprehensive overview of my skill and experience. The page is organized into section like About, Experience, Projects and Contacts, each designed to offer concise information and to facilitate the navigation. This structure ensure that visitors can easily explore the web page and find all of the essential details in one place, enhancing their overall browsing experience.
 
 2. **style.css**: The CSS file is responsible for styling the entire web page. It includes styling rules for layout, colors, fonts, and responsiveness. Specific classes and IDs are used to target elements and ensure a consistent design across different sections.
 
 3. **images/**: This directory stores all the images used in the portfolio, including logos, project screenshots, and certificates. Proper organization within this folder enhances maintainability and makes it easy to update or add new images.
 
-4. **script.js**: While the current version of the portfolio may not heavily rely on JavaScript, the script file is included for potential future enhancements. It can be used to add interactivity, dynamic content loading, or other client-side functionalities.
+4. **script.js**: While the current version of the portfolio may not heavily rely on JavaScript, this script file is included for potential future enhancements. It can be used to add interactivity, dynamic content loading, or other client-side functionalities.
 
 ## 🎨 Design Choices
 
@@ -52,8 +52,8 @@ A consistent color scheme, font choice, and logo placement contribute to a cohes
 
 ## 🔮 Future Enhancements
 
-As the portfolio evolves, future enhancements may include interactive features, more detailed project descriptions, and integration with additional technologies or frameworks. Regular updates will be made to reflect ongoing learning and new accomplishments.
+As the portfolio evolves, future enhancements may include interactive features, more detailed project descriptions, a section to include a resume that visitors can download and view, and integration with additional technologies or frameworks. Regular updates will be made to reflect ongoing learning and new accomplishments.
 
 ## 🚀 Conclusion
 
-This portfolio web page serves as a dynamic representation of my skills and experiences, providing a platform for showcasing my journey in the world of web development. Through thoughtful design choices and a commitment to simplicity, it aims to leave a positive and lasting impression on visitors. Feel free to explore and reach out for any inquiries or collaborations!
+This web portfolio serves as a representation of the skills and experiences accumulated during the completion of CS50x, providing a platform to showcase my journey in the world of web development and coding in general. Through design choices and a commitment to simplicity, it aims to leave a positive and lasting impression on visitors. Feel free to explore and reach out for any inquiries or collaborations!
