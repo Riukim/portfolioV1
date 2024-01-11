@@ -3,7 +3,7 @@
 ---
 
 # MY PERSONAL WEB PORTFOLIO
-## :clapper: Video Presentation:  (https://youtu.be/Ekym_YArgCE)
+## :clapper: Video Presentation:  https://youtu.be/Ekym_YArgCE
 
 
 ## :label: **Description**
