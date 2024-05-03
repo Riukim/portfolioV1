@@ -16,7 +16,9 @@ For now, the projects section consists of placeholders. As I continue to expand 
 
 ## 👀 Preview
 
+<p align="center">
 ![Animated Preview](images/webpagepresentation.gif)
+</p>
 
 ## 📁 File Structure
 
